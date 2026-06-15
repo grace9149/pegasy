@@ -19,7 +19,7 @@ export default async function TimeOffPage() {
       .select('*, policy:policy_id(name, color, days_per_year)'),
     supabase
       .from('workspace_members')
-      .select('user_id, role, user:user_id(email)')
+      .select('user_id, role')
       .order('created_at'),
     supabase
       .from('workspace_members')

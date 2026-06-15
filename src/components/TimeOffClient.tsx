@@ -10,9 +10,9 @@ type Request = {
   days: number; status: 'pending' | 'approved' | 'denied'; note: string | null; reviewer_note: string | null
   created_at: string
   policy: { name: string; color: string } | null
-  requester: { email: string } | null
+  requester: { email: string | null } | null
 }
-type Member = { user_id: string; role: string; user: { email: string } | null }
+type Member = { user_id: string; role: string }
 
 type Tab = 'request' | 'timeline' | 'balance' | 'policies' | 'admin'
 
@@ -532,7 +532,7 @@ export default function TimeOffClient({
                     <label className="block text-sm font-medium mb-1" style={labelStyle}>Employee</label>
                     <select value={adjustUserId} onChange={e => setAdjustUserId(e.target.value)} className={inputCls} style={{ ...inputStyle, background: 'white' }}>
                       {members.length > 0 ? members.map(m => (
-                        <option key={m.user_id} value={m.user_id}>{m.user?.email ?? m.user_id}</option>
+                        <option key={m.user_id} value={m.user_id}>{m.user_id}</option>
                       )) : <option value={currentUserId}>{currentUserEmail}</option>}
                     </select>
                   </div>
