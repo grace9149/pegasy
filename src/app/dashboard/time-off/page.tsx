@@ -44,7 +44,7 @@ export default async function TimeOffPage() {
           initialRequests={requests ?? []}
           initialPolicies={policies ?? []}
           allBalances={allBalances ?? []}
-          members={members ?? []}
+          members={(members ?? []).map(m => ({ user_id: m.user_id, role: m.role }))}
         />
       </div>
     </div>
