@@ -1,3 +1,5 @@
+export const runtime = 'edge'
+
 // Time Off page
 import { createClient } from '@/lib/supabase-server'
 import TimeOffClient from '@/components/TimeOffClient'
