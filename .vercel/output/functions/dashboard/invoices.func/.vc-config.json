@@ -1,0 +1,18 @@
+{
+  "runtime": "edge",
+  "name": "dashboard/invoices",
+  "deploymentTarget": "v8-worker",
+  "entrypoint": "index.js",
+  "assets": [],
+  "framework": {
+    "slug": "nextjs",
+    "version": "16.2.7"
+  },
+  "environment": {
+    "__NEXT_BUILD_ID": "YdsJBxg7KKRawsdcKYXBr",
+    "NEXT_SERVER_ACTIONS_ENCRYPTION_KEY": "/nQa4DXE+rBrjwEvFtxCgqdrIGJhODqwyFEBxHRDT1c=",
+    "__NEXT_PREVIEW_MODE_ID": "53c1e480a5ad9af7e20be00fd52656d7",
+    "__NEXT_PREVIEW_MODE_ENCRYPTION_KEY": "f1a7a6ff91baee8f51b48b03db9ed1eadc8d93f8d3e22f07d96ca6b166766c79",
+    "__NEXT_PREVIEW_MODE_SIGNING_KEY": "1ade3a0809d26718785f53893018bb3c08d8c423a7c6943c1498efe66eebdf4d"
+  }
+}
